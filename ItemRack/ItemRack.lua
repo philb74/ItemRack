@@ -1366,7 +1366,7 @@ function ItemRack.UpdateCombatQueue()
 		end
 	end
 
-	for i=1,19 do
+	for i=0,19 do
 		queue = _G["Character"..ItemRack.SlotInfo[i].name.."Queue"]
 		if ItemRack.CombatQueue[i] then
 			queue:SetTexture(select(2,ItemRack.GetInfoByID(ItemRack.CombatQueue[i])))
